@@ -1,0 +1,70 @@
+:root {
+    /* =========================
+       CORES
+    ========================= */
+
+    --bege: #DCD7C9;
+    --grafite: #2C3639;
+    --verde: #3F4E4F;
+    --marrom: #A27B5C;
+    --bege-claro: #E8E3D8;
+
+    /* =========================
+       FONTES
+    ========================= */
+
+    --font-title: "Cormorant Garamond", serif;
+    --font-body: "Manrope", sans-serif;
+
+    /* =========================
+       TAMANHOS DE FONTE
+    ========================= */
+
+    --font-size-h1: 64px;
+    --font-size-h2: 48px;
+    --font-size-h3: 36px;
+    --font-size-h4: 28px;
+    --font-size-h5: 22px;
+
+    --font-size-body-lg: 18px;
+    --font-size-body-md: 16px;
+    --font-size-body-sm: 14px;
+
+    --font-size-button: 15px;
+    --font-size-nav: 15px;
+    --font-size-caption: 12px;
+
+
+    /* =========================
+       LAYOUT
+    ========================= */
+
+    --container-width: 1200px;
+
+
+    /* =========================
+       ESPAÇAMENTOS
+    ========================= */
+
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 32px;
+    --spacing-lg: 64px;
+    --spacing-xl: 96px;
+
+
+    /* =========================
+       BORDAS
+    ========================= */
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+
+    /* =========================
+       TRANSIÇÕES
+    ========================= */
+
+    --transition: 0.3s ease;
+}

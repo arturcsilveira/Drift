@@ -1,0 +1,94 @@
+body {
+    background-color: var(--bege);
+    color: var(--grafite);
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body-md);
+    line-height: 1.5;
+}
+
+
+/* TÍTULOS */
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-title);
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+    font-weight: 600;
+}
+
+
+/* TEXTOS */
+
+.text-lg {
+    font-size: var(--font-size-body-lg);
+}
+
+.text-md {
+    font-size: var(--font-size-body-md);
+}
+
+.text-sm {
+    font-size: var(--font-size-body-sm);
+}
+
+.caption {
+    font-size: var(--font-size-caption);
+}
+
+
+/* LAYOUT */
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+
+/* BOTÕES */
+
+button {
+    font-family: var(--font-body);
+    font-size: var(--font-size-button);
+    font-weight: 600;
+}
+
+
+/* NAVEGAÇÃO */
+
+nav {
+    font-family: var(--font-body);
+    font-size: var(--font-size-nav);
+    font-weight: 500;
+}
+
+
+/* TRANSIÇÕES */
+
+button, a {
+    transition: var(--transition);
+}
