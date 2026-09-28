@@ -1,61 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drift</title>
 
-    <link rel="stylesheet" href="./src/css/main.css">
-</head>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
 
-<body>
+<header class="header">
+    <div class="container header-container">
 
-    <header>
-        <!-- Header -->
-    </header>
+        <a href="#hero" class="header-logo" aria-label="Drift">
+            <img src="./assets/imgs/logo/logo.png" alt="Drift">
+        </a>
+
+        <nav class="header-nav" aria-label="Navegação principal">
+            <ul class="header-menu">
+                <li>
+                    <a href="#design">Design</a>
+                </li>
+
+                <li>
+                    <a href="#vantagens">Vantagens</a>
+                </li>
+
+                <li>
+                    <a href="#comparacao">Comparação</a>
+                </li>
+
+                <li>
+                    <a href="#avaliacoes">Avaliações</a>
+                </li>
+
+                <li>
+                    <a href="#faq">Dúvidas</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="#produto" class="button header-button">Compre Agora </a>
+
+        <button
+            class="header-menu-button"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
 
     <main>
+      <section id="hero">
+        <section id="hero" class="hero">
+    <div class="container hero-container">
 
-        <section id="hero">
-            <!-- Hero -->
-        </section>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Esqueça o ditado.<br>
+                Compre a mala sem alça.
+            </h1>
 
-        <section id="contador">
-            <!-- Contador / números -->
-        </section>
+            <p class="hero-text">
+                Drift, a mala sem alça que elimina a parte que mais quebra
+                e transforma sua viagem em uma experiência mais leve,
+                moderna e sem complicação.
+            </p>
 
-        <section id="design">
-            <!-- Design inteligente -->
-        </section>
+            <a href="#produto" class="button hero-button">
+                QUERO MINHA DRIFT
+            </a>
+        </div>
 
-        <section id="vantagens">
-            <!-- Vantagens -->
-        </section>
+        <div class="hero-image">
+            <img
+                src="./assets/imgs/hero/hero.png"
+                alt="Mala Drift sem alça"
+            >
+        </div>
 
-        <section id="comparacao">
-            <!-- Drift x mala comum -->
-        </section>
+    </div>
+</section>
+      </section>
 
-        <section id="avaliacoes">
-            <!-- Carrossel -->
-        </section>
+      <section id="contador" class="counter">
+    <div class="container counter-container">
 
-        <section id="faq">
-            <!-- Dúvidas frequentes -->
-        </section>
+        <p class="counter-message">
+            OFERTA DE LANÇAMENTO<br>
+            TERMINA EM:
+        </p>
 
+        <div class="counter-timer">
+
+            <div class="counter-item">
+                <span class="counter-number" id="days">29</span>
+                <span class="counter-label">DIAS</span>
+            </div>
+
+            <span class="counter-divider"></span>
+
+            <div class="counter-item">
+                <span class="counter-number" id="hours">22</span>
+                <span class="counter-label">Horas</span>
+            </div>
+
+            <span class="counter-divider"></span>
+
+            <div class="counter-item">
+                <span class="counter-number" id="minutes">49</span>
+                <span class="counter-label">MIN</span>
+            </div>
+
+            <span class="counter-divider"></span>
+
+            <div class="counter-item">
+                <span class="counter-number" id="seconds">28</span>
+                <span class="counter-label">SEG</span>
+            </div>
+
+        </div>
+
+        <p class="counter-message">
+            GARANTA ANTES QUE<br>
+            ACABE
+        </p>
+
+    </div>
+</section>
+
+      <section id="design">
+        <!-- Design inteligente -->
+      </section>
+
+      <section id="vantagens">
+        <!-- Vantagens -->
+      </section>
+
+      <section id="comparacao">
+        <!-- Drift x mala comum -->
+      </section>
+
+      <section id="avaliacoes">
+        <!-- Carrossel -->
+      </section>
+
+      <section id="faq">
+        <!-- Dúvidas frequentes -->
+      </section>
     </main>
 
     <footer>
-        <!-- Footer -->
+      <!-- Footer -->
     </footer>
 
-    <script src="./src/js/main.js"></script>
-
-</body>
-
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
 </html>

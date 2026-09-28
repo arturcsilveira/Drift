@@ -1,10 +1,11 @@
 /* BASE */
 
-@import url("./base/variables.css");
+@import url("./base/variaveis.css");
 @import url("./base/reset.css");
 @import url("./base/global.css");
+@import url("./base/fonts.css");
 
-/* Components */
+/* COMPONENTS */
 
 @import url("./components/buttons.css");
 @import url("./components/cards.css");
@@ -12,19 +13,19 @@
 @import url("./components/faq.css");
 @import url("./components/header.css");
 
-/* Sections */
+/* SECTIONS */
 
 @import url("./sections/hero.css");
 @import url("./sections/counter.css");
 @import url("./sections/design-inteligente.css");
 @import url("./sections/vantagens.css");
-@import url("./sections/comparação.css");
+@import url("./sections/comparacao.css");
 @import url("./sections/product.css");
 @import url("./sections/testemunhas.css");
 @import url("./sections/footer.css");
 
 
-/* Responsive */
+/* RESPONSIVE */
 
 @import url("./responsive/tablet.css");
 @import url("./responsive/mobile.css");

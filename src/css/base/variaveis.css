@@ -1,7 +1,5 @@
 :root {
-    /* =========================
-       CORES
-    ========================= */
+    /* Cores */
 
     --bege: #DCD7C9;
     --grafite: #2C3639;
@@ -9,12 +7,10 @@
     --marrom: #A27B5C;
     --bege-claro: #E8E3D8;
 
-    /* =========================
-       FONTES
-    ========================= */
+    /* FONTES */
 
-    --font-title: "Cormorant Garamond", serif;
-    --font-body: "Manrope", sans-serif;
+   --font-title: "Playfair Display", serif;
+   --font-body: "Manrope", sans-serif;
 
     /* =========================
        TAMANHOS DE FONTE
