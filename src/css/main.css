@@ -1,9 +1,9 @@
 /* BASE */
 
+@import url("./base/fonts.css");
 @import url("./base/variaveis.css");
 @import url("./base/reset.css");
 @import url("./base/global.css");
-@import url("./base/fonts.css");
 
 /* COMPONENTS */
 

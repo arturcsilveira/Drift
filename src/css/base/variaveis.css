@@ -12,9 +12,7 @@
    --font-title: "Playfair Display", serif;
    --font-body: "Manrope", sans-serif;
 
-    /* =========================
-       TAMANHOS DE FONTE
-    ========================= */
+    /* TAMANHOS DE FONTE */
 
     --font-size-h1: 64px;
     --font-size-h2: 48px;
@@ -31,16 +29,12 @@
     --font-size-caption: 12px;
 
 
-    /* =========================
-       LAYOUT
-    ========================= */
+    /* LAYOUT */
 
     --container-width: 1200px;
 
 
-    /* =========================
-       ESPAÇAMENTOS
-    ========================= */
+    /* ESPAÇAMENTOS */
 
     --spacing-xs: 8px;
     --spacing-sm: 16px;
@@ -49,18 +43,14 @@
     --spacing-xl: 96px;
 
 
-    /* =========================
-       BORDAS
-    ========================= */
+    /* BORDAS */
 
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
 
 
-    /* =========================
-       TRANSIÇÕES
-    ========================= */
+    /* TRANSIÇÕES */
 
     --transition: 0.3s ease;
 }

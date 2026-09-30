@@ -1,0 +1,171 @@
+/* FAQ */
+
+.faq {
+    width: 100%;
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+
+    background-color: var(--bege);
+}
+
+.faq-container {
+    max-width: 1050px;
+}
+
+
+/* HEADER */
+
+.faq-header {
+    margin-bottom: var(--spacing-md);
+
+    text-align: center;
+}
+
+.faq-caption {
+    display: block;
+
+    margin-bottom: var(--spacing-sm);
+
+    color: var(--grafite);
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-caption);
+    font-weight: 500;
+
+    text-transform: uppercase;
+}
+
+.faq-title {
+    color: var(--grafite);
+
+    font-family: var(--font-title);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+
+/* LIST */
+
+.faq-list {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* ITEM */
+
+.faq-item {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--verde);
+}
+
+
+/* QUESTION */
+
+.faq-question {
+    width: 100%;
+
+    padding: 16px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    border: none;
+
+    background-color: var(--verde);
+    color: var(--bege-claro);
+
+    font-family: var(--font-title);
+    font-size: var(--font-size-body-md);
+    font-weight: 500;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    filter: brightness(1.08);
+}
+
+
+/* ARROW */
+
+.faq-arrow {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--bege-claro);
+
+    font-family: var(--font-body);
+    font-size: 26px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    transform: translateY(-2px);
+
+    transition: var(--transition);
+}
+
+/* ANSWER */
+
+.faq-answer {
+    max-height: 0;
+
+    padding: 0 20px 0 54px;
+
+    overflow: hidden;
+
+    background-color: var(--verde);
+
+    color: var(--bege-claro);
+
+    transition:
+        max-height 0.4s ease,
+        padding 0.4s ease;
+}
+
+.faq-answer p {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body-sm);
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    opacity: 0.85;
+}
+
+
+/* ACTIVE */
+
+.faq-item.active .faq-answer {
+    max-height: 250px;
+
+    padding: 10px 20px 18px 54px;
+}

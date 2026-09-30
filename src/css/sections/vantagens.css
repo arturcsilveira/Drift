@@ -1,0 +1,51 @@
+/* VANTAGENS */
+
+.vantagens {
+    width: 100%;
+    padding: 70px 0 80px;
+
+    background-color: var(--bege);
+}
+
+
+/* CABEÇALHO */
+
+.vantagens-header {
+    margin-bottom: 45px;
+
+    text-align: center;
+}
+
+.vantagens-caption {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--grafite);
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-caption);
+    font-weight: 500;
+
+    text-transform: uppercase;
+}
+
+.vantagens-title {
+    color: var(--grafite);
+
+    font-family: var(--font-title);
+    font-size: 32px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* GRID */
+
+.vantagens-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 32px;
+}

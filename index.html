@@ -3,160 +3,694 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Drift</title>
 
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
 
-<header class="header">
-    <div class="container header-container">
-
+  <body>
+    <!-- Cabecalho -->
+    <header class="header">
+      <div class="container header-container">
         <a href="#hero" class="header-logo" aria-label="Drift">
-            <img src="./assets/imgs/logo/logo.png" alt="Drift">
+          <img src="./assets/imgs/logo/logo.png" alt="Drift" />
         </a>
 
         <nav class="header-nav" aria-label="Navegação principal">
-            <ul class="header-menu">
-                <li>
-                    <a href="#design">Design</a>
-                </li>
+          <ul class="header-menu">
+            <li>
+              <a href="#design">Design</a>
+            </li>
 
-                <li>
-                    <a href="#vantagens">Vantagens</a>
-                </li>
+            <li>
+              <a href="#vantagens">Vantagens</a>
+            </li>
 
-                <li>
-                    <a href="#comparacao">Comparação</a>
-                </li>
+            <li>
+              <a href="#comparacao">Comparação</a>
+            </li>
 
-                <li>
-                    <a href="#avaliacoes">Avaliações</a>
-                </li>
+            <li>
+              <a href="#avaliacoes">Avaliações</a>
+            </li>
 
-                <li>
-                    <a href="#faq">Dúvidas</a>
-                </li>
-            </ul>
+            <li>
+              <a href="#faq">Dúvidas</a>
+            </li>
+          </ul>
         </nav>
 
-        <a href="#produto" class="button header-button">Compre Agora </a>
+        <a href="#produto" class="button header-button"> Compre Agora </a>
 
         <button
-            class="header-menu-button"
-            type="button"
-            aria-label="Abrir menu"
-            aria-expanded="false"
+          class="header-menu-button"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
         >
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-
-    </div>
-</header>
+      </div>
+    </header>
 
     <main>
-      <section id="hero">
-        <section id="hero" class="hero">
-    <div class="container hero-container">
-
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Esqueça o ditado.<br>
-                Compre a mala sem alça.
-            </h1>
-
-            <p class="hero-text">
-                Drift, a mala sem alça que elimina a parte que mais quebra
-                e transforma sua viagem em uma experiência mais leve,
-                moderna e sem complicação.
-            </p>
-
-            <a href="#produto" class="button hero-button">
-                QUERO MINHA DRIFT
-            </a>
-        </div>
-
-        <div class="hero-image">
-            <img
-                src="./assets/imgs/hero/hero.png"
-                alt="Mala Drift sem alça"
-            >
-        </div>
-
-    </div>
-</section>
+      <section id="hero" class="hero">
+        <a href="#produto" class="hero-link">
+          <img
+            src="./assets/imgs/hero/Hero.png"
+            alt="Drift"
+            class="hero-image"
+          />
+        </a>
       </section>
 
       <section id="contador" class="counter">
-    <div class="container counter-container">
-
-        <p class="counter-message">
-            OFERTA DE LANÇAMENTO<br>
+        <div class="container counter-container">
+          <p class="counter-message">
+            OFERTA DE LANÇAMENTO<br />
             TERMINA EM:
-        </p>
+          </p>
 
-        <div class="counter-timer">
-
+          <div class="counter-timer">
             <div class="counter-item">
-                <span class="counter-number" id="days">29</span>
-                <span class="counter-label">DIAS</span>
+              <span class="counter-number" id="days">29</span>
+              <span class="counter-label">DIAS</span>
             </div>
 
             <span class="counter-divider"></span>
 
             <div class="counter-item">
-                <span class="counter-number" id="hours">22</span>
-                <span class="counter-label">Horas</span>
+              <span class="counter-number" id="hours">22</span>
+              <span class="counter-label">HORAS</span>
             </div>
 
             <span class="counter-divider"></span>
 
             <div class="counter-item">
-                <span class="counter-number" id="minutes">49</span>
-                <span class="counter-label">MIN</span>
+              <span class="counter-number" id="minutes">49</span>
+              <span class="counter-label">MIN</span>
             </div>
 
             <span class="counter-divider"></span>
 
             <div class="counter-item">
-                <span class="counter-number" id="seconds">28</span>
-                <span class="counter-label">SEG</span>
+              <span class="counter-number" id="seconds">28</span>
+              <span class="counter-label">SEG</span>
+            </div>
+          </div>
+
+          <p class="counter-message">
+            GARANTA ANTES QUE<br />
+            ACABE
+          </p>
+        </div>
+      </section>
+
+      <section id="design" class="design">
+        <div class="container design-container">
+          <div class="design-image">
+            <img
+              src="./assets/imgs/design/parte-de-baixo.png"
+              alt="Detalhe das rodas e estrutura da mala Drift"
+            />
+          </div>
+
+          <div class="design-content">
+            <span class="design-caption"> DESIGN INTELIGENTE </span>
+
+            <h2 class="design-title">
+              MENOS PEÇAS<br />
+              MAIS VIAGEM
+            </h2>
+
+            <p class="design-text">
+              Enquanto as malas tradicionais quebram justamente nas alças e
+              sistemas de puxar, a Drift elimina esse problema com um design
+              inteligente, minimalista e resistente.
+            </p>
+
+            <a href="#vantagens" class="design-button">
+              <span>SAIBA MAIS</span>
+              <span class="design-arrow">→</span>
+            </a>
+
+            <span class="design-slogan"> PENSADA PARA IR MAIS LONGE </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="vantagens" class="vantagens">
+        <div class="container vantagens-container">
+          <div class="vantagens-header">
+            <span class="vantagens-caption"> POR QUE ESCOLHER A DRIFT? </span>
+
+            <h2 class="vantagens-title">VANTAGENS QUE AJUDAM NA SUA VIAGEM</h2>
+          </div>
+
+          <div class="vantagens-grid">
+            <article class="vantagem-card">
+              <img
+                src="./assets/icons/Alça Quebrada.png"
+                alt=""
+                class="vantagem-icon"
+              />
+
+              <h3 class="vantagem-title">Sem alça para<br />quebrar</h3>
+
+              <p class="vantagem-text">
+                Elimina o ponto mais frágil das<br />
+                malas tradicionais
+              </p>
+            </article>
+
+            <article class="vantagem-card">
+              <img
+                src="./assets/icons/Espaço.png"
+                alt=""
+                class="vantagem-icon"
+              />
+
+              <h3 class="vantagem-title">Mais espaço interno</h3>
+
+              <p class="vantagem-text">
+                Design inteligente que aproveita<br />
+                melhor o espaço
+              </p>
+            </article>
+
+            <article class="vantagem-card">
+              <img
+                src="./assets/icons/Folha.png"
+                alt=""
+                class="vantagem-icon"
+              />
+
+              <h3 class="vantagem-title">Estrutura<br />simplificada</h3>
+
+              <p class="vantagem-text">Menos peças, mais durabilidade</p>
+            </article>
+
+            <article class="vantagem-card">
+              <img
+                src="./assets/icons/Roda 360.png"
+                alt=""
+                class="vantagem-icon"
+              />
+
+              <h3 class="vantagem-title">Rodas 360°</h3>
+
+              <p class="vantagem-text">
+                Movimentação suave e estável<br />
+                em qualquer superfície
+              </p>
+            </article>
+
+            <article class="vantagem-card">
+              <img
+                src="./assets/icons/Chave Inglesa.png"
+                alt=""
+                class="vantagem-icon"
+              />
+
+              <h3 class="vantagem-title">Menos manutenção</h3>
+
+              <p class="vantagem-text">
+                Mais tempo viajando e menos<br />
+                preocupações
+              </p>
+            </article>
+
+            <article class="vantagem-card">
+              <img
+                src="./assets/icons/Diamante.png"
+                alt=""
+                class="vantagem-icon"
+              />
+
+              <h3 class="vantagem-title">Visual minimalista</h3>
+
+              <p class="vantagem-text">
+                Elegância que combina com<br />
+                qualquer destino
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparacao" class="comparacao">
+        <div class="container comparacao-container">
+          <div class="comparacao-header">
+            <span class="comparacao-caption"> A DIFERENÇA É CLARA </span>
+
+            <h2 class="comparacao-title">
+              MENOS PROBLEMAS<br />
+              MAIS DESTINOS
+            </h2>
+          </div>
+
+          <div class="comparacao-grid">
+            <!-- MALA COMUM -->
+
+            <article class="comparacao-card comparacao-comum">
+              <div class="comparacao-info">
+                <ul class="comparacao-lista">
+                  <li>
+                    <span class="comparacao-icon comparacao-icon-ruim">×</span>
+                    Alças que quebram
+                  </li>
+
+                  <li>
+                    <span class="comparacao-icon comparacao-icon-ruim">×</span>
+                    Mais peças, mais falhas
+                  </li>
+
+                  <li>
+                    <span class="comparacao-icon comparacao-icon-ruim">×</span>
+                    Manutenção frequente
+                  </li>
+
+                  <li>
+                    <span class="comparacao-icon comparacao-icon-ruim">×</span>
+                    Design ultrapassado
+                  </li>
+                </ul>
+
+                <img
+                  src="./assets/imgs/product/Mala Comum.png"
+                  alt="Mala tradicional com alça"
+                  class="comparacao-image"
+                />
+              </div>
+
+              <h3 class="comparacao-card-title">MALA COMUM</h3>
+            </article>
+
+            <!-- DRIFT -->
+
+            <article class="comparacao-card comparacao-drift">
+              <div class="comparacao-info">
+                <ul class="comparacao-lista">
+                  <li>
+                    <span class="comparacao-icon comparacao-icon-bom">✓</span>
+                    Sem alças para quebrar
+                  </li>
+
+                  <li>
+                    <span class="comparacao-icon comparacao-icon-bom">✓</span>
+                    Mais leve e resistente
+                  </li>
+
+                  <li>
+                    <span class="comparacao-icon comparacao-icon-bom">✓</span>
+                    Menos manutenção
+                  </li>
+
+                  <li>
+                    <span class="comparacao-icon comparacao-icon-bom">✓</span>
+                    Design moderno
+                  </li>
+                </ul>
+
+                <img
+                  src="./assets/imgs/product/Drift-png.png"
+                  alt="Mala Drift"
+                  class="comparacao-image"
+                />
+              </div>
+
+              <h3 class="comparacao-card-title">DRIFT</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="avaliacoes" class="testemunhas">
+        <div class="container testemunhas-container">
+          <div class="testemunhas-header">
+            <span class="testemunhas-caption">
+              QUEM JÁ VIAJOU COM A GENTE
+            </span>
+
+            <h2 class="testemunhas-title">HISTÓRIAS REAIS. DESTINOS REAIS.</h2>
+
+            <span class="testemunhas-line"></span>
+          </div>
+
+          <div class="carousel">
+            <button
+              class="carousel-button carousel-prev"
+              type="button"
+              aria-label="Avaliação anterior"
+            >
+              ←
+            </button>
+
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <article class="testemunha-card">
+                  <img
+                    src="./assets/imgs/testemunhas/Alexandra Farias.png"
+                    alt="Alexandra Farias"
+                    class="testemunha-image"
+                  />
+
+                  <p class="testemunha-text">
+                    “Eu achei estranho no começo.<br />
+                    Agora não quero outra mala.”
+                  </p>
+
+                  <strong class="testemunha-name"> Alexandra Farias </strong>
+
+                  <span class="testemunha-location"> Sorocaba, SP </span>
+
+                  <span class="testemunha-stars"> ★★★★★ </span>
+                </article>
+
+                <article class="testemunha-card">
+                  <img
+                    src="./assets/imgs/testemunhas/Guilherme Cunha.png"
+                    alt="Guilherme Cunha"
+                    class="testemunha-image"
+                  />
+
+                  <p class="testemunha-text">
+                    “Design incrível, leve e super<br />
+                    prática. Já usei em 4 viagens e<br />
+                    continua impecável”
+                  </p>
+
+                  <strong class="testemunha-name"> Guilherme Cunha </strong>
+
+                  <span class="testemunha-location"> Erechim, RS </span>
+
+                  <span class="testemunha-stars"> ★★★★★ </span>
+                </article>
+
+                <article class="testemunha-card">
+                  <img
+                    src="./assets/imgs/testemunhas/Diego Santos.png"
+                    alt="Diego Santos"
+                    class="testemunha-image"
+                  />
+
+                  <p class="testemunha-text">
+                    “Muito bonita e funcional. Cabe<br />
+                    tudo e é bem fácil de manobrar”
+                  </p>
+
+                  <strong class="testemunha-name"> Diego Santos </strong>
+
+                  <span class="testemunha-location"> Juiz de Fora, MG </span>
+
+                  <span class="testemunha-stars"> ★★★★★ </span>
+                </article>
+
+                <article class="testemunha-card">
+                  <img
+                    src="./assets/imgs/testemunhas/Fernanda Lombardi.png"
+                    alt="Fernanda Lombardi"
+                    class="testemunha-image"
+                  />
+
+                  <p class="testemunha-text">
+                    “A Drift me surpreendeu pela praticidade.
+                    É leve, fácil de movimentar e tem
+                    um ótimo espaço interno.”
+                  </p>
+
+                  <strong class="testemunha-name"> Fernanda Lombardi </strong>
+
+                  <span class="testemunha-location"> João Pessoa, PB </span>
+
+                  <span class="testemunha-stars"> ★★★★☆ </span>
+                </article>
+
+                <article class="testemunha-card">
+                  <img
+                    src="./assets/imgs/testemunhas/Pedro Piloto.png"
+                    alt="Pedro Piloto"
+                    class="testemunha-image"
+                  />
+
+                  <p class="testemunha-text">
+                    “Gostei muito do design e da forma
+                    como a mala se movimenta. As rodas
+                    são muito suaves.”
+                  </p>
+
+                  <strong class="testemunha-name"> Pedro Piloto </strong>
+
+                  <span class="testemunha-location"> Salvador, BA </span>
+
+                  <span class="testemunha-stars"> ★★★★★ </span>
+                </article>
+
+                <article class="testemunha-card">
+                  <img
+                    src="./assets/imgs/testemunhas/Yu Ishigami.png"
+                    alt="Yu Ishigami"
+                    class="testemunha-image"
+                  />
+
+                  <p class="testemunha-text">
+                    “O que mais gostei foi o espaço interno
+                    e a facilidade para movimentar a mala
+                    durante a viagem.”
+                  </p>
+
+                  <strong class="testemunha-name"> Yu Ishigami </strong>
+
+                  <span class="testemunha-location"> Cuiabá, MT </span>
+
+                  <span class="testemunha-stars"> ★★★★★ </span>
+                </article>
+              </div>
             </div>
 
+            <button
+              class="carousel-button carousel-next"
+              type="button"
+              aria-label="Próxima avaliação"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="produto" class="product">
+        <div class="product-image">
+          <img
+            src="./assets/imgs/design/drift-fundo.png"
+            alt="Mala Drift One em um aeroporto"
+          />
         </div>
 
-        <p class="counter-message">
-            GARANTA ANTES QUE<br>
-            ACABE
-        </p>
+        <div class="product-panel">
+          <div class="product-content">
+            <span class="product-caption"> OFERTA ESPECIAL DE LANÇAMENTO </span>
 
-    </div>
-</section>
+            <h2 class="product-title">Drift One</h2>
 
-      <section id="design">
-        <!-- Design inteligente -->
+            <p class="product-subtitle">VIAJE MAIS LEVE. VIVA MAIS.</p>
+
+            <div class="product-price">
+              <span class="product-old-price"> R$ 299,90 </span>
+
+              <strong class="product-current-price"> R$ 167,90 </strong>
+
+              <span class="product-discount"> 44% OFF </span>
+            </div>
+
+            <span class="product-line"></span>
+
+            <a href="#" class="product-button">
+              COMPRAR AGORA
+              <span>→</span>
+            </a>
+
+            <div class="product-benefits">
+              <div class="product-benefit">
+                <img src="./assets/icons/frete.png" alt="frete-grátis" />
+
+                <div>
+                  <strong>Frete Grátis</strong>
+                  <span>para todo o Brasil</span>
+                </div>
+              </div>
+
+              <div class="product-benefit">
+                <img src="./assets/icons/garantia.png" alt="garantia" />
+
+                <div>
+                  <strong>Garantia</strong>
+                  <span>de até 1 ano</span>
+                </div>
+              </div>
+
+              <div class="product-benefit">
+                <img src="./assets/icons/certificado.png" alt="aprovado" />
+
+                <div>
+                  <strong>Testada</strong>
+                  <span>e aprovada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="vantagens">
-        <!-- Vantagens -->
-      </section>
+    <!-- faq -->
+      <section id="faq" class="faq">
+        <div class="container faq-container">
+          <div class="faq-header reveal">
+            <span class="faq-caption"> AINDA TEM DÚVIDAS? </span>
 
-      <section id="comparacao">
-        <!-- Drift x mala comum -->
-      </section>
+            <h2 class="faq-title">PERGUNTAS FREQUENTES</h2>
+          </div>
 
-      <section id="avaliacoes">
-        <!-- Carrossel -->
-      </section>
+          <div class="faq-list reveal">
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span class="faq-arrow">⌄</span>
+                <span>Por que a Drift não tem alça?</span>
+              </button>
 
-      <section id="faq">
-        <!-- Dúvidas frequentes -->
+              <div class="faq-answer">
+                <p>
+                  A Drift foi desenvolvida sem alça tradicional para eliminar um
+                  dos pontos que mais quebram nas malas convencionais,
+                  simplificando a estrutura e aumentando a durabilidade.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span class="faq-arrow">⌄</span>
+                <span>Como eu transporto a Drift sem alça?</span>
+              </button>
+
+              <div class="faq-answer">
+                <p>
+                  A Drift foi pensada para ser movimentada principalmente pelas
+                  rodas 360°, permitindo conduzir a mala de forma leve e prática
+                  durante o deslocamento.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span class="faq-arrow">⌄</span>
+                <span>A Drift possui mais espaço interno?</span>
+              </button>
+
+              <div class="faq-answer">
+                <p>
+                  Sim. Como a Drift não possui o mecanismo interno de uma alça
+                  retrátil, há menos componentes ocupando espaço dentro da mala.
+                  Isso permite aproveitar melhor o volume interno e organizar
+                  seus pertences com mais liberdade.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span class="faq-arrow">⌄</span>
+                <span>As rodas realmente giram 360°?</span>
+              </button>
+
+              <div class="faq-answer">
+                <p>
+                  Sim. As rodas foram projetadas para girar em todas as
+                  direções, facilitando mudanças de direção e tornando a
+                  movimentação mais suave em diferentes ambientes.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span class="faq-arrow">⌄</span>
+                <span>A Drift pode ser despachada em viagens de avião?</span>
+              </button>
+
+              <div class="faq-answer">
+                <p>
+                  Sim. A Drift foi criada sem alças justamente para otimizar
+                  espaço durante o despacho, reduzindo partes externas e
+                  tornando o formato da mala mais compacto e eficiente. Basta
+                  respeitar os limites de tamanho e peso da companhia aérea.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span class="faq-arrow">⌄</span>
+                <span>A Drift possui garantia?</span>
+              </button>
+
+              <div class="faq-answer">
+                <p>
+                  Sim. A Drift possui garantia de até 1 ano para defeitos de
+                  fabricação, oferecendo mais segurança durante o uso do
+                  produto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <!-- Footer -->
+    <!-- Rodapé -->
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <a href="#hero" class="footer-logo">
+            <img src="./assets/imgs/logo/logo.png" alt="Logo Drift" />
+          </a>
+
+          <nav class="footer-nav">
+            <a href="#design">Sobre</a>
+            <a href="#vantagens">Benefícios</a>
+            <a href="#avaliacoes">Depoimentos</a>
+            <a href="#faq">Dúvidas</a>
+            <a href="#contato">Contato</a>
+          </nav>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Drift. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
     <script type="module" src="./src/js/main.js"></script>
