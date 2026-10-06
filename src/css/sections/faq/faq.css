@@ -88,7 +88,6 @@
 .faq-arrow {
     width: 20px;
     height: 20px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +108,7 @@
     overflow: hidden;
     background-color: var(--verde);
     color: var(--bege-claro);
-
+    
     transition:
         max-height 0.4s ease,
         padding 0.4s ease;
