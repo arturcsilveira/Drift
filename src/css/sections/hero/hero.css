@@ -1,21 +1,17 @@
 .hero {
     width: 100%;
     overflow: hidden;
-
     background-color: var(--grafite);
 }
 
 .hero-link {
     width: 100%;
-
     display: block;
-
     cursor: pointer;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
-
     display: block;
 }

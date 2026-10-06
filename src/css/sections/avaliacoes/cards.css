@@ -1,0 +1,63 @@
+/* CARD DE TESTEMUNHA */
+
+.testemunha-card {
+  min-width: calc((100% - 2 * var(--spacing-md)) / 3);
+  height: 250px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bege-claro);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+/* FOTO */
+
+.testemunha-image {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--spacing-sm);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* DEPOIMENTO */
+
+.testemunha-text {
+  margin-bottom: var(--spacing-xs);
+  color: var(--grafite);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* NOME */
+
+.testemunha-name {
+  margin-bottom: 4px;
+  color: var(--grafite);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: 600;
+}
+
+/* LOCALIZAÇÃO */
+
+.testemunha-location {
+  margin-bottom: var(--spacing-xs);
+  color: var(--grafite);
+  font-family: var(--font-body);
+  font-size: var(--font-size-caption);
+  font-weight: 400;
+}
+
+/* ESTRELAS */
+
+.testemunha-stars {
+  color: var(--grafite);
+  font-size: var(--font-size-body-sm);
+  letter-spacing: 2px;
+}

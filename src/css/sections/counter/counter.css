@@ -1,0 +1,34 @@
+/* COUNTER */
+
+.counter {
+  width: 100%;
+  height: 110px;
+  background-color: var(--marrom);
+}
+
+.counter-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*  MENSAGENS */
+
+.counter-message {
+  width: 230px;
+  color: var(--bege);
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* TIMER */
+
+.counter-timer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

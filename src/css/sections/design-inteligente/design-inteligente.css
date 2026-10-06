@@ -2,9 +2,7 @@
 
 .design {
     width: 100%;
-
     padding: 80px 0;
-
     background-color: var(--grafite);
 }
 
@@ -14,9 +12,7 @@
 .design-container {
     display: grid;
     grid-template-columns: 42% 58%;
-
     align-items: stretch;
-
     gap: 50px;
 }
 
@@ -25,20 +21,17 @@
 
 .design-image {
     width: 100%;
-    height: 360px;
-
+    height: 480px;
     overflow: hidden;
-
     border-radius: var(--radius-md);
 }
 
 .design-image img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
+    object-position: 60% center;
 }
 
 
@@ -46,13 +39,10 @@
 
 .design-content {
     min-height: 360px;
-
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
-
     text-align: center;
 }
 
@@ -61,13 +51,10 @@
 
 .design-caption {
     margin-bottom: 22px;
-
     color: var(--marrom);
-
     font-family: var(--font-body);
     font-size: var(--font-size-caption);
     font-weight: 500;
-
     text-transform: uppercase;
 }
 
@@ -76,31 +63,23 @@
 
 .design-title {
     margin-bottom: 32px;
-
     color: var(--bege);
-
     font-family: var(--font-title);
     font-size: var(--font-size-h2);
     font-weight: 700;
-
     line-height: 1.1;
 }
-
 
 /* TEXTO */
 
 .design-text {
     width: 100%;
     max-width: 650px;
-
     margin-bottom: 34px;
-
     color: var(--bege-claro);
-
     font-family: var(--font-body);
     font-size: var(--font-size-body-md);
     font-weight: 400;
-
     line-height: 1.5;
 }
 
@@ -109,29 +88,19 @@
 
 .design-button {
     min-width: 165px;
-
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     gap: 14px;
-
     padding: 11px 22px;
-
     margin-bottom: 18px;
-
     background-color: var(--marrom);
     color: var(--bege-claro);
-
     border-radius: var(--radius-lg);
-
     font-family: var(--font-body);
     font-size: 12px;
     font-weight: 600;
-
     text-transform: uppercase;
-
     transition: var(--transition);
 }
 
@@ -157,10 +126,8 @@
 
 .design-slogan {
     color: var(--bege-claro);
-
     font-family: var(--font-body);
     font-size: 10px;
     font-weight: 400;
-
     text-transform: uppercase;
 }

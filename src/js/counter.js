@@ -6,51 +6,42 @@ const secondsElement = document.getElementById("seconds");
 let endDate = localStorage.getItem("driftOfferEnd");
 
 if (!endDate) {
-    const date = new Date();
+  const date = new Date();
 
-    date.setDate(date.getDate() + 30);
+  date.setDate(date.getDate() + 30);
 
-    endDate = date.getTime();
+  endDate = date.getTime();
 
-    localStorage.setItem("driftOfferEnd", endDate);
+  localStorage.setItem("driftOfferEnd", endDate);
 }
 
 function updateCounter() {
-    const now = new Date().getTime();
-    const distance = endDate - now;
+  const now = new Date().getTime();
+  const distance = endDate - now;
 
-    if (distance <= 0) {
-        daysElement.textContent = "00";
-        hoursElement.textContent = "00";
-        minutesElement.textContent = "00";
-        secondsElement.textContent = "00";
+  if (distance <= 0) {
+    daysElement.textContent = "00";
+    hoursElement.textContent = "00";
+    minutesElement.textContent = "00";
+    secondsElement.textContent = "00";
 
-        return;
-    }
+    return;
+  }
 
-    const days = Math.floor(
-        distance / (1000 * 60 * 60 * 24)
-    );
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-    const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) /
-        (1000 * 60 * 60)
-    );
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+  );
 
-    const minutes = Math.floor(
-        (distance % (1000 * 60 * 60)) /
-        (1000 * 60)
-    );
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-    const seconds = Math.floor(
-        (distance % (1000 * 60)) /
-        1000
-    );
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    daysElement.textContent = String(days).padStart(2, "0");
-    hoursElement.textContent = String(hours).padStart(2, "0");
-    minutesElement.textContent = String(minutes).padStart(2, "0");
-    secondsElement.textContent = String(seconds).padStart(2, "0");
+  daysElement.textContent = String(days).padStart(2, "0");
+  hoursElement.textContent = String(hours).padStart(2, "0");
+  minutesElement.textContent = String(minutes).padStart(2, "0");
+  secondsElement.textContent = String(seconds).padStart(2, "0");
 }
 
 updateCounter();

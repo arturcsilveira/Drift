@@ -1,0 +1,50 @@
+/* CARD DE VANTAGEM*/
+
+.vantagem-card {
+    min-height: 170px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bege-claro);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.vantagem-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ÍCONE */
+
+.vantagem-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 14px;
+    object-fit: contain;
+}
+
+/* TÍTULO */
+
+.vantagem-title {
+    margin-bottom: 8px;
+    color: var(--grafite);
+    font-family: var(--font-title);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+
+/* TEXTO */
+
+.vantagem-text {
+    color: var(--grafite);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+}

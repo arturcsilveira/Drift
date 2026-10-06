@@ -4,6 +4,7 @@
 @import url("./base/variaveis.css");
 @import url("./base/reset.css");
 @import url("./base/global.css");
+@import url("./base/animacoes.css");
 
 /* COMPONENTS */
 
@@ -15,17 +16,29 @@
 
 /* SECTIONS */
 
-@import url("./sections/hero.css");
-@import url("./sections/counter.css");
-@import url("./sections/design-inteligente.css");
-@import url("./sections/vantagens.css");
-@import url("./sections/comparacao.css");
-@import url("./sections/product.css");
-@import url("./sections/testemunhas.css");
-@import url("./sections/footer.css");
-
+/*Header*/
+@import url("./sections/header/header.css");
+@import url("./sections/header/button.css");
+@import url("./sections/header/menu.css");
+@import url("./sections/hero/hero.css");
+@import url("./sections/counter/counter.css");
+@import url("./sections/counter/circles.css");
+@import url("./sections/design-inteligente/design-inteligente.css");
+@import url("./sections/design-inteligente/button.css");
+@import url("./sections/vantagens/cards.css");
+@import url("./sections/vantagens/vantagens.css");
+@import url("./sections/avaliacoes/cards.css");
+@import url("./sections/avaliacoes/carousel.css");
+@import url("./sections/avaliacoes/testemunhas.css");
+@import url("./sections/avaliacoes/cards.css");
+@import url("./sections/comparacao/cards.css");
+@import url("./sections/comparacao/comparacao.css");
+@import url("./sections/product/product.css");
+@import url("./sections/product/content.css");
+@import url("./sections/product/button.css");
+@import url("./sections/faq/faq.css");
+@import url("./sections/footer/footer.css");
 
 /* RESPONSIVE */
 
-@import url("./responsive/tablet.css");
-@import url("./responsive/mobile.css");
+@import url(./responsive/mobile/mobile.css);

@@ -1,0 +1,34 @@
+/* BOTÃO */
+
+.design-button {
+    min-width: 165px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 11px 22px;
+    margin-bottom: 18px;
+    background-color: var(--marrom);
+    color: var(--bege-claro);
+    border-radius: var(--radius-lg);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.design-button:hover {
+    background-color: var(--bege);
+    color: var(--grafite);
+}
+
+.design-arrow {
+    font-size: 18px;
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.design-button:hover .design-arrow {
+    transform: translateX(4px);
+}

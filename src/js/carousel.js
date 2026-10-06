@@ -5,41 +5,47 @@ const cards = document.querySelectorAll(".testemunha-card");
 
 let currentIndex = 0;
 
-const cardsPerView = 3;
+function getCardsPerView() {
+  if (window.innerWidth <= 768) {
+    return 2;
+  }
+
+  return 3;
+}
 
 function updateCarousel() {
-    const card = cards[0];
+  const card = cards[0];
 
-    if (!card) return;
+  if (!card) return;
 
-    const cardWidth = card.offsetWidth;
+  const cardWidth = card.offsetWidth;
 
-    const trackStyle = window.getComputedStyle(track);
-    const gap = parseFloat(trackStyle.gap) || 0;
+  const trackStyle = window.getComputedStyle(track);
+  const gap = parseFloat(trackStyle.gap) || 0;
 
-    const moveAmount = (cardWidth + gap) * currentIndex;
+  const moveAmount = (cardWidth + gap) * currentIndex;
 
-    track.style.transform = `translateX(-${moveAmount}px)`;
+  track.style.transform = `translateX(-${moveAmount}px)`;
 }
 
 nextButton.addEventListener("click", () => {
-    if (currentIndex >= cards.length - cardsPerView) {
-        currentIndex = 0;
-    } else {
-        currentIndex++;
-    }
+  if (currentIndex >= cards.length - getCardsPerView()) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
 
-    updateCarousel();
+  updateCarousel();
 });
 
 prevButton.addEventListener("click", () => {
-    if (currentIndex <= 0) {
-        currentIndex = cards.length - cardsPerView;
-    } else {
-        currentIndex--;
-    }
+  if (currentIndex <= 0) {
+    currentIndex = cards.length - getCardsPerView();
+  } else {
+    currentIndex--;
+  }
 
-    updateCarousel();
+  updateCarousel();
 });
 
 window.addEventListener("resize", updateCarousel);

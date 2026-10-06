@@ -1,62 +1,14 @@
-/* COUNTER */
-
-.counter {
-    width: 100%;
-    height: 110px;
-
-    background-color: var(--marrom);
-}
-
-.counter-container {
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-/*  MENSAGENS */
-
-.counter-message {
-    width: 230px;
-
-    color: var(--bege);
-
-    font-family: var(--font-title);
-    font-size: 18px;
-    font-weight: 600;
-
-    line-height: 1.2;
-    text-align: center;
-}
-
-
-/* TIMER */
-
-.counter-timer {
-    display: flex;
-    align-items: center;
-
-    gap: 16px;
-}
-
-
 /* CÍRCULOS */
 
 .counter-item {
     width: 62px;
     height: 62px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-color: var(--verde);
-
     border-radius: 50%;
-
     color: var(--bege-claro);
 }
 
@@ -67,7 +19,6 @@
     font-family: var(--font-body);
     font-size: 13px;
     font-weight: 600;
-
     line-height: 1;
 }
 
@@ -76,11 +27,9 @@
 
 .counter-label {
     margin-top: 4px;
-
     font-family: var(--font-body);
     font-size: 10px;
     font-weight: 500;
-
     line-height: 1;
     text-transform: uppercase;
 }
@@ -91,7 +40,6 @@
 .counter-divider {
     width: 1px;
     height: 35px;
-
     background-color: var(--bege);
     opacity: 0.5;
 }

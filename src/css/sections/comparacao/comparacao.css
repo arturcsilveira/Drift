@@ -1,0 +1,40 @@
+/* COMPARAÇÃO */
+
+.comparacao {
+  width: 100%;
+  padding: var(--spacing-lg) 0 var(--spacing-xl);
+  background-color: var(--verde);
+}
+
+/* CABEÇALHO */
+
+.comparacao-header {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.comparacao-caption {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  color: var(--marrom);
+  font-family: var(--font-body);
+  font-size: var(--font-size-caption);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.comparacao-title {
+  color: var(--bege);
+  font-family: var(--font-title);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* GRID */
+
+.comparacao-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}

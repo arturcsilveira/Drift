@@ -48,22 +48,3 @@
 .header-menu a:hover {
     color: var(--marrom);
 }
-
-
-/* BOTÃO */
-
-.header-button {
-    padding: 12px 24px;
-
-    background-color: var(--marrom);
-    color: var(--bege);
-
-    border-radius: var(--radius-sm);
-
-    font-size: var(--bege);
-    font-weight: 600;
-}
-
-.header-button:hover {
-    background-color: var(--grafite);
-}
