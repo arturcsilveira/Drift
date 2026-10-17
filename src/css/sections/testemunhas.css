@@ -45,12 +45,11 @@
 
 .testemunha-card {
   min-width: calc((100% - 2 * var(--spacing-md)) / 3);
-  height: 250px;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-sm);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: var(--bege-claro);
   border-radius: var(--radius-md);
   text-align: center;
@@ -69,7 +68,11 @@
 /* DEPOIMENTO */
 
 .testemunha-text {
-  margin-bottom: var(--spacing-xs);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
   color: var(--grafite);
   font-family: var(--font-body);
   font-size: var(--font-size-body-sm);
@@ -100,11 +103,12 @@
 /* ESTRELAS */
 
 .testemunha-stars {
+  height: 1em;
   color: var(--grafite);
   font-size: var(--font-size-body-sm);
+  line-height: 1;
   letter-spacing: 2px;
 }
-
 
 /* CARROSSEL */
 
@@ -151,7 +155,60 @@
   transition: var(--transition);
 }
 
-.carousel-button:hover{
+.carousel-button:hover {
   background-color: var(--verde);
   transform: translateY(-5px);
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .carousel {
+    gap: var(--spacing-sm);
+  }
+
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-body-lg);
+  }
+
+  .carousel-track {
+    gap: var(--spacing-sm);
+  }
+
+  .testemunha-card {
+    flex: 0 0 calc((100% - var(--spacing-sm)) / 2);
+    min-width: 0;
+  }
+
+  .testemunha-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+  .carousel-button {
+    width: 32px;
+    height: 32px;
+    font-size: var(--font-size-body-sm);
+  }
+
+  .testemunha-card {
+    padding: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
+  }
+
+  .testemunha-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  .testemunha-text,
+  .testemunha-name,
+  .testemunha-stars {
+    font-size: var(--font-size-caption);
+  }
 }

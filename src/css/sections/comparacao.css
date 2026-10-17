@@ -42,12 +42,18 @@
 /* CARDS */
 
 .comparacao-card {
-  height: 380px;
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border-radius: var(--radius-md);
+}
+
+/* altura que se adapta à tela (só acima de 768px) */
+@media (min-width: 769px) {
+  .comparacao-card {
+    height: clamp(380px, calc(380px + (1200px - 100vw) * 0.25), 480px);
+  }
 }
 
 .comparacao-comum {
@@ -62,10 +68,11 @@
 
 .comparacao-info {
   width: 100%;
-  height: 100%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--spacing-sm);
   padding: var(--spacing-sm) var(--spacing-md) 0 var(--spacing-md);
 }
 
@@ -74,7 +81,8 @@
 .comparacao-lista {
   position: relative;
   z-index: 2;
-  min-width: 240px;
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
@@ -123,11 +131,11 @@
 /* IMAGENS */
 
 .comparacao-image {
-  width: 320px;
-  height: 340px;
+  width: 55%;
   position: relative;
   z-index: 1;
-  align-self: flex-end;
+  flex-shrink: 0;
+  align-self: stretch;
   object-fit: contain;
   object-position: bottom center;
 }
@@ -148,4 +156,79 @@
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .comparacao-title {
+    font-size: var(--font-size-h3);
+  }
+
+  .comparacao-grid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+    margin: 0 auto;
+    gap: var(--spacing-md);
+  }
+
+  .comparacao-card {
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .comparacao-info {
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-sm) 0;
+  }
+
+  .comparacao-lista {
+    flex: none;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .comparacao-lista li {
+    font-size: var(--font-size-body-sm);
+  }
+
+  .comparacao-image {
+    width: 40%;
+    height: auto;
+    min-height: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    margin-top: auto;
+    object-position: center top;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+  .comparacao-grid {
+    max-width: 85%;
+  }
+
+  .comparacao-lista li {
+    font-size: var(--font-size-caption);
+  }
+
+  .comparacao-icon {
+    width: 20px;
+    height: 20px;
+    font-size: var(--font-size-caption);
+  }
+
+  .comparacao-image {
+    width: 60%;
+  }
+
+  .comparacao-card-title {
+    font-size: var(--font-size-h5);
+  }
 }

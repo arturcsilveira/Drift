@@ -3,39 +3,35 @@ const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
 const secondsElement = document.getElementById("seconds");
 
-let endDate = localStorage.getItem("driftOfferEnd");
+const OFFER_DAYS = 30;
 
-if (!endDate) {
+function createEndDate() {
   const date = new Date();
+  date.setDate(date.getDate() + OFFER_DAYS);
 
-  date.setDate(date.getDate() + 30);
+  const time = date.getTime();
+  localStorage.setItem("driftOfferEnd", time);
 
-  endDate = date.getTime();
+  return time;
+}
 
-  localStorage.setItem("driftOfferEnd", endDate);
+let endDate = Number(localStorage.getItem("driftOfferEnd"));
+
+if (!endDate || endDate <= Date.now()) {
+  endDate = createEndDate();
 }
 
 function updateCounter() {
-  const now = new Date().getTime();
-  const distance = endDate - now;
+  let distance = endDate - Date.now();
 
   if (distance <= 0) {
-    daysElement.textContent = "00";
-    hoursElement.textContent = "00";
-    minutesElement.textContent = "00";
-    secondsElement.textContent = "00";
-
-    return;
+    endDate = createEndDate();
+    distance = endDate - Date.now();
   }
 
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-  const hours = Math.floor(
-    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-  );
-
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   daysElement.textContent = String(days).padStart(2, "0");
@@ -45,5 +41,4 @@ function updateCounter() {
 }
 
 updateCounter();
-
 setInterval(updateCounter, 1000);

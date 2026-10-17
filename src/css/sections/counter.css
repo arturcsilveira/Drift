@@ -36,45 +36,98 @@
 /* CÍRCULOS */
 
 .counter-item {
-    width: 62px;
-    height: 62px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--verde);
-    border-radius: 50%;
-    color: var(--bege-claro);
+  width: 62px;
+  height: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--verde);
+  border-radius: 50%;
+  color: var(--bege-claro);
 }
-
 
 /* NÚMEROS */
 
 .counter-number {
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
 }
-
 
 /* LABEL */
 
 .counter-label {
-    margin-top: 4px;
-    font-family: var(--font-body);
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 1;
-    text-transform: uppercase;
+  margin-top: 4px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
 }
-
 
 /*  DIVISORES */
 
 .counter-divider {
-    width: 1px;
-    height: 35px;
-    background-color: var(--bege);
-    opacity: 0.5;
+  width: 1px;
+  height: 35px;
+  background-color: var(--bege);
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .counter {
+    height: auto;
+    padding: calc(var(--spacing-sm) * 1.5) 0;
+  }
+
+  .counter-container {
+    gap: var(--spacing-sm);
+  }
+
+  .counter-message {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .counter-timer {
+    gap: var(--spacing-xs);
+  }
+
+  .counter-item {
+    width: 55px;
+    height: 55px;
+  }
+
+  .counter-number {
+    font-size: 18px;
+  }
+
+  .counter-label {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-message {
+    font-size: 8px;
+  }
+
+  .counter-item {
+    width: 42px;
+    height: 42px;
+  }
+
+  .counter-number {
+    font-size: 14px;
+  }
+
+  .counter-label {
+    font-size: 6px;
+  }
+
+  .counter-divider {
+    height: 20px;
+  }
 }
