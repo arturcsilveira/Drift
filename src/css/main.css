@@ -1,43 +1,20 @@
 /* BASE */
 
-@import url("./base/fonts.css");
-@import url("./base/variaveis.css");
-@import url("./base/reset.css");
-@import url("./base/global.css");
-@import url("./base/animacoes.css");
-
-/* COMPONENTS */
-
-@import url("./components/buttons.css");
-@import url("./components/cards.css");
-@import url("./components/carousel.css");
-@import url("./components/faq.css");
-@import url("./components/header.css");
+@import url("./base/base.css");
 
 /* SECTIONS */
 
 /*Header*/
-@import url("./sections/header/header.css");
-@import url("./sections/header/button.css");
-@import url("./sections/header/menu.css");
-@import url("./sections/hero/hero.css");
-@import url("./sections/counter/counter.css");
-@import url("./sections/counter/circles.css");
-@import url("./sections/design-inteligente/design-inteligente.css");
-@import url("./sections/design-inteligente/button.css");
-@import url("./sections/vantagens/cards.css");
-@import url("./sections/vantagens/vantagens.css");
-@import url("./sections/avaliacoes/cards.css");
-@import url("./sections/avaliacoes/carousel.css");
-@import url("./sections/avaliacoes/testemunhas.css");
-@import url("./sections/avaliacoes/cards.css");
-@import url("./sections/comparacao/cards.css");
-@import url("./sections/comparacao/comparacao.css");
-@import url("./sections/product/product.css");
-@import url("./sections/product/content.css");
-@import url("./sections/product/button.css");
-@import url("./sections/faq/faq.css");
-@import url("./sections/footer/footer.css");
+@import url("./sections/header.css");
+@import url("./sections/hero.css");
+@import url("./sections/counter.css");
+@import url("./sections/design-inteligente.css");
+@import url("./sections/vantagens.css");
+@import url("./sections/testemunhas.css");
+@import url("./sections/comparacao.css");
+@import url("./sections/product.css");
+@import url("./sections/faq.css");
+@import url("./sections/footer.css");
 
 /* RESPONSIVE */
 

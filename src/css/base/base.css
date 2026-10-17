@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("../../../assets/fonts/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+
+  font-weight: 200 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+:root {
+  /* Cores */
+
+  --bege: #dcd7c9;
+  --grafite: #2c3639;
+  --verde: #3f4e4f;
+  --marrom: #a27b5c;
+  --bege-claro: #e8e3d8;
+
+  /* FONTES */
+
+  --font-title: "Playfair Display", serif;
+  --font-body: "Manrope", sans-serif;
+
+  /* TAMANHOS DE FONTE */
+
+  --font-size-h1: 64px;
+  --font-size-h2: 48px;
+  --font-size-h3: 36px;
+  --font-size-h4: 28px;
+  --font-size-h5: 22px;
+
+  --font-size-body-lg: 18px;
+  --font-size-body-md: 16px;
+  --font-size-body-sm: 14px;
+
+  --font-size-button: 15px;
+  --font-size-nav: 15px;
+  --font-size-caption: 12px;
+
+  /* LAYOUT */
+
+  --container-width: 1200px;
+
+  /* ESPAÇAMENTOS */
+
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 96px;
+
+  /* BORDAS */
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* TRANSIÇÕES */
+
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background-color: var(--bege);
+  color: var(--grafite);
+
+  font-family: var(--font-body);
+  font-size: var(--font-size-body-md);
+  line-height: 1.5;
+}
+
+/* TÍTULOS */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-title);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: 600;
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+  font-weight: 600;
+}
+
+/* TEXTOS */
+
+.text-lg {
+  font-size: var(--font-size-body-lg);
+}
+
+.text-md {
+  font-size: var(--font-size-body-md);
+}
+
+.text-sm {
+  font-size: var(--font-size-body-sm);
+}
+
+.caption {
+  font-size: var(--font-size-caption);
+}
+
+/* LAYOUT */
+
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* BOTÕES */
+
+button {
+  font-family: var(--font-body);
+  font-size: var(--font-size-button);
+  font-weight: 600;
+}
+
+/* NAVEGAÇÃO */
+
+nav {
+  font-family: var(--font-body);
+  font-size: var(--font-size-nav);
+  font-weight: 500;
+}
+
+/* TRANSIÇÕES */
+
+button,
+a {
+  transition: var(--transition);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVIDADE GLOBAL */
+
+/* TABLET (Telas até 768px) */
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 52px;
+    --font-size-h2: 40px;
+    --font-size-h3: 30px;
+    --font-size-h4: 24px;
+    --font-size-h5: 20px;
+
+    /* ESPAÇAMENTOS */
+    --spacing-xl: 72px;
+    --spacing-lg: 48px;
+    --spacing-md: 24px;
+    --spacing-sm: 12px;
+
+    /* BORDAS */
+    --radius-lg: 20px;
+    --radius-md: 12px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+  :root {
+    --font-size-h1: 40px;
+    --font-size-h2: 32px;
+    --font-size-h3: 26px;
+    --font-size-h4: 22px;
+    --font-size-h5: 18px;
+
+    --font-size-body-lg: 16px;
+    --font-size-body-md: 15px;
+
+    /* ESPAÇAMENTOS */
+    --spacing-xl: 48px;
+    --spacing-lg: 32px;
+    --spacing-md: 16px;
+    --spacing-sm: 8px;
+    --spacing-xs: 4px;
+
+    /* BORDAS */
+    --radius-lg: 16px;
+    --radius-md: 8px;
+
+    /* LAYOUT */
+
+    --container-width: 100%;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

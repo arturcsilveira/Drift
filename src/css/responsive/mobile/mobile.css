@@ -1,18 +1,4 @@
-/* ==========================================================================
-   RESPONSIVE MEDIA QUERIES (Mobile-First Cascade Order)
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. TABLET & MOBILE BASE (Até 768px)
-   -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
-  /* CONTAINER */
-  .container {
-    width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   /* HEADER */
   .header-container {
     height: 75px;
@@ -429,12 +415,7 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   2. MOBILE SPECIFIC OVERRIDES (Até 480px)
-   -------------------------------------------------------------------------- */
 @media (max-width: 480px) {
-  /* CONTAINER */
-  .container,
   .footer-container {
     padding-left: 18px;
     padding-right: 18px;

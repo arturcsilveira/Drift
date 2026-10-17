@@ -1,3 +1,44 @@
+/* PRODUCT */
+
+.product {
+    width: 100%;
+    min-height: 600px;
+    display: grid;    
+    grid-template-columns: 40% 60%;
+    overflow: hidden;
+    background-color: var(--grafite);
+}
+
+
+/* IMAGE */
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 10% center;
+}
+
+
+/* PANEL */
+
+.product-panel {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    background-color: var(--grafite);
+}
+
 /* CONTENT */
 
 .product-content {
@@ -123,4 +164,39 @@
   font-family: var(--font-body);
   font-size: var(--font-size-caption);
   opacity: 0.8;
+}
+
+/* BUTTON */
+
+.product-button {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: var(--spacing-lg);
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  background-color: var(--marrom);
+  color: var(--bege-claro);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body-md);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.product-button span {
+  font-size: 22px;
+
+  transition: var(--transition);
+}
+
+.product-button:hover {
+  background-color: var(--bege);
+  color: var(--grafite);
+}
+
+.product-button:hover span {
+  transform: translateX(5px);
 }
