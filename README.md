@@ -32,7 +32,7 @@ Landing page da **Drift**, marca fictícia de malas de viagem que eliminou a al�
 | **Design inteligente** | Apresentação do conceito da mala sem alça. |
 | **Vantagens** | Seis cards com os benefícios do produto. |
 | **Comparação** | Mala comum × Drift, lado a lado. |
-| **Testemunhas** | Carrossel de depoimentos de clientes. |
+| **Avaliações** | Carrossel de depoimentos de clientes. |
 | **Produto** | Oferta, preço, desconto e benefícios de compra. |
 | **FAQ** | Perguntas frequentes em acordeão. |
 | **Footer** | Logo, links, redes sociais e direitos autorais. |
@@ -67,7 +67,6 @@ O projeto é estático, mas usa **módulos ES6**. Por restrição de segurança 
 ```bash
      npx serve .
 ```
- 
      ou, com Python instalado:
  
 ```bash
@@ -96,7 +95,7 @@ O projeto é estático, mas usa **módulos ES6**. Por restrição de segurança 
 │   │   │   ├── 📄 design-inteligente.css
 │   │   │   ├── 📄 vantagens.css
 │   │   │   ├── 📄 comparacao.css
-│   │   │   ├── 📄 testemunhas.css
+│   │   │   ├── 📄 avaliacoes.css
 │   │   │   ├── 📄 product.css
 │   │   │   ├── 📄 faq.css
 │   │   │   └── 📄 footer.css
@@ -158,7 +157,7 @@ Exemplo: `--spacing-lg` vale 64px no desktop, 48px no tablet e 32px no celular, 
 - **Header:** a navegação vira menu hambúrguer abaixo de 768px, e o botão "Compre agora" é ocultado.
 - **Hero:** desktop e tablet usam a imagem larga, com o texto sobre a área vazia ao lado da mala. No celular, o elemento `<picture>` troca para uma versão vertical, com filtro grafite e o texto centralizado por cima. O tamanho do texto usa `clamp()` para acompanhar a largura da tela.
 - **Comparação:** no desktop, a lista fica ao lado da imagem. No tablet e no celular, a lista fica em cima e a imagem embaixo.
-- **Testemunhas:** o carrossel mostra 3 cards no desktop e 2 no tablet e no celular.
+- **Avaliacoes:** o carrossel mostra 3 cards no desktop e 2 no tablet e no celular.
 - **Produto:** imagem e painel lado a lado no desktop e no tablet. No celular, a imagem vira fundo da seção, com filtro grafite, e o texto fica por cima.
 - **FAQ, Footer, Contador, Design e Vantagens:** reduzem fontes e espaçamentos e reorganizam colunas conforme a tela.
 ---
