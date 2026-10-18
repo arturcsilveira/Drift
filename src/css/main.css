@@ -10,12 +10,8 @@
 @import url("./sections/counter.css");
 @import url("./sections/design-inteligente.css");
 @import url("./sections/vantagens.css");
-@import url("./sections/testemunhas.css");
+@import url("./sections/avaliacoes.css");
 @import url("./sections/comparacao.css");
 @import url("./sections/product.css");
 @import url("./sections/faq.css");
 @import url("./sections/footer.css");
-
-/* RESPONSIVE */
-
-@import url(./responsive/mobile/mobile.css);

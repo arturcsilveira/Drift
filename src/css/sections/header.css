@@ -53,7 +53,7 @@
   background-color: var(--marrom);
   color: var(--bege);
   border-radius: var(--radius-sm);
-  font-size: var(--bege);
+  font-size: var(--font-size-button);
   font-weight: 600;
 }
 

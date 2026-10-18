@@ -59,21 +59,36 @@
 }
 
 .hero-button {
-  padding: 0.9em 1.8em;
+  min-width: 165px;
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  justify-content: center;
+  gap: 14px;
+  padding: 11px 22px;
+  margin-bottom: 18px;
   background-color: var(--marrom);
   color: var(--bege-claro);
   border-radius: var(--radius-lg);
-  font-size: clamp(12px, 1.1vw, var(--font-size-button));
+  font-family: var(--font-body);
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
+  transition: var(--transition);
 }
 
 .hero-button:hover {
   background-color: var(--bege);
   color: var(--grafite);
+}
+
+.hero-arrow {
+  font-size: 18px;
+  line-height: 1;
+  transition: var(--transition);
+}
+
+.hero-button:hover .hero-arrow {
+  transform: translateX(4px);
 }
 
 /* TABLET */

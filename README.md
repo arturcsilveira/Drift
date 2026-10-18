@@ -107,7 +107,7 @@ O projeto é estático, mas usa **módulos ES6**. Por restrição de segurança 
 │       ├── 📄 counter.js             # Contador regressivo
 │       ├── 📄 carousel.js            # Carrossel de depoimentos
 │       ├── 📄 faq.js                 # Acordeão do FAQ
-│       └── 📄 scroll.js              # Animações ao rolar a página
+│       └── 📄 animacoes.js              # Animações ao rolar a página
 ├── 📄 index.html
 └── 📄 README.md
 ```
@@ -173,7 +173,7 @@ O JS é dividido em módulos pequenos, importados pelo `main.js`, cada um com um
 | `counter.js` | Contagem regressiva de 30 dias. A data final fica no `localStorage`. Quando a oferta expira, um novo ciclo começa automaticamente. |
 | `carousel.js` | Carrossel com botões de anterior e próximo. A função `getCardsPerView()` retorna 2 cards em telas de até 768px e 3 acima disso, e a posição é recalculada ao redimensionar a janela. |
 | `faq.js` | Acordeão com troca dinâmica dos ícones "+" e "−". |
-| `scroll.js` | Usa `IntersectionObserver` para aplicar o efeito de entrada (fade-in com deslocamento) nos elementos com a classe `.reveal` quando eles aparecem na tela. |
+| `animacoes.js` | Usa `IntersectionObserver` para aplicar o efeito de entrada (fade-in com deslocamento) nos elementos com a classe `.reveal` quando eles aparecem na tela. |
  
 > **Sobre o contador:** a data final é guardada no `localStorage` do navegador, então cada visitante vê um prazo de 30 dias a partir da primeira visita. É uma contagem simulada, usada apenas como elemento visual de escassez.
  

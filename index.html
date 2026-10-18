@@ -64,10 +64,7 @@
       <!-- Hero -->
       <section id="hero" class="hero">
         <picture class="hero-picture">
-          <source
-            media="(max-width: 600px)"
-            srcset="./assets/imgs/Hero2.jpg"
-          />
+          <source media="(max-width: 600px)" srcset="./assets/imgs/Hero2.jpg" />
           <img
             class="hero-image"
             src="./assets/imgs/Hero.jpg"
@@ -89,9 +86,11 @@
                 sem complicação
               </p>
 
-              <a href="#produto" class="hero-button">
-                QUERO MINHA DRIFT
-                <i class="fa-solid fa-arrow-right"></i>
+              <a href="#vantagens" class="hero-button">
+                <span>QUERO MINHA DRIFT</span>
+                <span class="hero-arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
               </a>
             </div>
           </div>
@@ -188,7 +187,7 @@
           </div>
 
           <div class="vantagens-grid">
-            <article class="vantagem-card">
+            <article class="vantagem-card reveal">
               <img
                 src="./assets/icons/Alça Quebrada.png"
                 alt=""
@@ -203,7 +202,7 @@
               </p>
             </article>
 
-            <article class="vantagem-card">
+            <article class="vantagem-card reveal">
               <img
                 src="./assets/icons/Espaço.png"
                 alt=""
@@ -218,7 +217,7 @@
               </p>
             </article>
 
-            <article class="vantagem-card">
+            <article class="vantagem-card reveal">
               <img
                 src="./assets/icons/Folha.png"
                 alt=""
@@ -230,7 +229,7 @@
               <p class="vantagem-text">Menos peças, mais durabilidade</p>
             </article>
 
-            <article class="vantagem-card">
+            <article class="vantagem-card reveal">
               <img
                 src="./assets/icons/Roda 360.png"
                 alt=""
@@ -245,7 +244,7 @@
               </p>
             </article>
 
-            <article class="vantagem-card">
+            <article class="vantagem-card reveal">
               <img
                 src="./assets/icons/Chave Inglesa.png"
                 alt=""
@@ -260,7 +259,7 @@
               </p>
             </article>
 
-            <article class="vantagem-card">
+            <article class="vantagem-card reveal">
               <img
                 src="./assets/icons/Diamante.png"
                 alt=""
@@ -721,12 +720,12 @@
           <nav class="footer-nav">
             <a href="#design">Sobre</a>
             <a href="#vantagens">Benefícios</a>
-            <a href="#avaliacoes">Depoimentos</a>
+            <a href="#avaliacoes">Avaliações</a>
             <a href="#faq">Dúvidas</a>
             <a href="#contato">Contato</a>
           </nav>
 
-          <div class="footer-socials">
+          <div id="contato" class="footer-socials">
             <a href="#" aria-label="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
